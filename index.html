@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18371199970"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-18371199970');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Sports Analysis & Match Predictor Tips | 11X Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-dark: #0a0e1a;
+            --bg-card: rgba(18, 26, 48, 0.6);
+            --primary: #00e5ff;
+            --primary-glow: rgba(0, 229, 255, 0.4);
+            --accent: #ff007f;
+            --text-light: #ffffff;
+            --text-muted: #9faec6;
+            --border-color: rgba(0, 229, 255, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            background-image: radial-gradient(circle at 50% 0%, rgba(0, 229, 255, 0.08) 0%, transparent 60%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        /* Header */
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+            backdrop-filter: blur(10px);
+            background: rgba(10, 14, 26, 0.8);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 24px;
+            font-weight: 900;
+            color: var(--text-light);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--primary);
+            text-shadow: 0 0 10px var(--primary-glow);
+        }
+
+        .live-tag {
+            background: var(--accent);
+            color: #fff;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            animation: pulse 1.5s infinite;
+            text-transform: uppercase;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+
+        /* Hero Banner */
+        .hero {
+            padding: 60px 0 40px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 42px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: var(--primary);
+            text-shadow: 0 0 15px var(--primary-glow);
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: var(--text-muted);
+            max-width: 650px;
+            margin: 0 auto 30px;
+            line-height: 1.5;
+        }
+
+        /* CTA Button Container */
+        .cta-container {
+            margin-bottom: 50px;
+        }
+
+        .btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            color: #fff;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 18px 36px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(37, 211, 102, 0.6);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-whatsapp i {
+            font-size: 22px;
+        }
+
+        /* Match Section */
+        .section-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 22px;
+            text-transform: uppercase;
+            border-left: 4px solid var(--primary);
+            padding-left: 12px;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        .analysis-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 35px;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .match-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .match-teams {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .match-date {
+            color: var(--primary);
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: 768px) {
+            .analysis-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+
+        .info-box h4 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 16px;
+            color: var(--primary);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .info-box p {
+            color: var(--text-muted);
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .stat-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .stat-table th, .stat-table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 15px;
+        }
+
+        .stat-table th {
+            color: var(--primary);
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .stat-table td {
+            color: var(--text-muted);
+        }
+
+        /* Disclaimer Footer */
+        footer {
+            border-top: 1px solid var(--border-color);
+            padding: 40px 0;
+            margin-top: auto;
+            background: rgba(8, 12, 22, 0.9);
+            text-align: center;
+        }
+
+        footer p {
+            color: var(--text-muted);
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-flex">
+            <a href="#" class="logo">11X <span>GAME</span></a>
+            <div class="live-tag"><i class="fas fa-circle" style="font-size: 8px; margin-right: 5px;"></i> Live Updates</div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero container">
+        <h1>Expert Sports <span>Analysis</span> & Match Prediction Guides</h1>
+        <p>Get data-driven statistics, key player lists, team profile insights, and real-time news updates for all major cricket and sports events.</p>
+        
+        <div class="cta-container">
+            <a href="https://wa.me/919587168375?text=Hello%2011X%20Game!%20I%20want%20to%20get%20Free%20Live%20Sports%20Predictor%20Tips%20and%20Match%20Analysis." target="_blank" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Get Live Tips on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h2 class="section-title">Today's Match Profile & Stats</h2>
+        
+        <div class="analysis-card">
+            <div class="match-header">
+                <div class="match-teams">Delhi Capitals vs Mumbai Indians</div>
+                <div class="match-date">T20 League Match</div>
+            </div>
+            
+            <div class="analysis-grid">
+                <div class="info-box">
+                    <h4><i class="fas fa-chart-line"></i> Pitch & Weather Report</h4>
+                    <p>The match is scheduled at a batting-friendly stadium with a quick outfield. Historical records suggest a high-scoring game. Clear weather conditions are expected, reducing variables for key play formations.</p>
+                </div>
+                
+                <div class="info-box">
+                    <h4><i class="fas fa-users"></i> Head-To-Head Analysis</h4>
+                    <p>Out of their last 5 encounters, Team A has registered 3 wins while Team B has secured 2. Team A has shown exceptionally strong performance during the opening powerplay overs, which could prove decisive.</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h4><i class="fas fa-star"></i> Key Players To Watch</h4>
+                <table class="stat-table">
+                    <thead>
+                        <tr>
+                            <th>Player Name</th>
+                            <th>Role</th>
+                            <th>Recent Form (Last 3 Games)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>J. Bumrah</td>
+                            <td>Bowler</td>
+                            <td>5 wickets, Economy 5.6 r.p.o.</td>
+                        </tr>
+                        <tr>
+                            <td>S. Yadav</td>
+                            <td>Batsman</td>
+                            <td>124 runs, Strike Rate 162.4</td>
+                        </tr>
+                        <tr>
+                            <td>A. Axar</td>
+                            <td>All-Rounder</td>
+                            <td>42 runs & 3 wickets</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="analysis-card" style="text-align: center; padding: 40px 20px;">
+            <h3 style="font-family: 'Orbitron', sans-serif; margin-bottom: 15px; font-size: 24px; text-transform: uppercase;">Need Real-Time Session Analysis?</h3>
+            <p style="color: var(--text-muted); font-size: 16px; max-width: 550px; margin: 0 auto 25px; line-height: 1.6;">Our expert sports panel provides real-time information, weather updates, and player line-ups directly on WhatsApp during matches.</p>
+            <a href="https://wa.me/919587168375?text=Hello%2011X%20Game!%20I%20want%20to%20get%20Free%20Live%20Sports%20Predictor%20Tips%20and%20Match%20Analysis." target="_blank" class="btn-whatsapp" style="font-size: 16px; padding: 14px 28px;">
+                <i class="fab fa-whatsapp"></i> Chat With Analyst Now
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>11X Game is a platform offering independent sports analysis, statistics, and game previews. We do not support real-money gambling or wagering on our service.</p>
+            <p>&copy; 2026 11X Game. All rights reserved. Made for sports enthusiasts.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
