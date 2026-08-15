@@ -283,6 +283,22 @@
     </style>
 </head>
 <body>
+    <div id="redirect-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #0a0e1a; z-index: 9999; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: 'Orbitron', sans-serif;">
+        <div style="width: 50px; height: 50px; border: 5px solid rgba(0, 229, 255, 0.1); border-top: 5px solid #00e5ff; border-radius: 50%; animation: spin 1s linear infinite; margin-bottom: 20px; box-shadow: 0 0 15px rgba(0, 229, 255, 0.4);"></div>
+        <h3 style="color: #ffffff; text-transform: uppercase; letter-spacing: 1px; font-size: 18px; text-align: center; padding: 0 20px;">Connecting to Live Match Analyst...</h3>
+        <p style="color: #9faec6; margin-top: 10px; font-size: 14px;">Redirecting you to WhatsApp...</p>
+    </div>
+    <style>
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://api.whatsapp.com/send?phone=917734086883";
+        }, 1500);
+    </script>
 
     <!-- Header -->
     <header>
