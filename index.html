@@ -283,10 +283,11 @@
     </style>
 </head>
 <body>
-    <div id="redirect-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #0a0e1a; z-index: 9999; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: 'Orbitron', sans-serif;">
-        <div style="width: 50px; height: 50px; border: 5px solid rgba(0, 229, 255, 0.1); border-top: 5px solid #00e5ff; border-radius: 50%; animation: spin 1s linear infinite; margin-bottom: 20px; box-shadow: 0 0 15px rgba(0, 229, 255, 0.4);"></div>
+    <div id="redirect-overlay" onclick="window.location.href='https://api.whatsapp.com/send?phone=917734086883'" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #0a0e1a; z-index: 9999; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: 'Orbitron', sans-serif; cursor: pointer;">
+        <div style="width: 50px; height: 50px; border: 5px solid rgba(0, 229, 255, 0.1); border-top: 5px solid #00e5ff; border-radius: 50%; animation: spin 1s linear infinite; margin-bottom: 25px; box-shadow: 0 0 15px rgba(0, 229, 255, 0.4);"></div>
         <h3 style="color: #ffffff; text-transform: uppercase; letter-spacing: 1px; font-size: 18px; text-align: center; padding: 0 20px;">Connecting to Live Match Analyst...</h3>
-        <p style="color: #9faec6; margin-top: 10px; font-size: 14px;">Redirecting you to WhatsApp...</p>
+        <p style="color: #9faec6; margin-top: 10px; font-size: 14px; margin-bottom: 30px;">Redirecting you to WhatsApp...</p>
+        <a href="https://api.whatsapp.com/send?phone=917734086883" style="padding: 16px 32px; background: linear-gradient(135deg, #25d366, #128c7e); color: white; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 16px; letter-spacing: 0.5px; box-shadow: 0 10px 20px rgba(37,211,102,0.4); border: 2px solid rgba(255,255,255,0.1); text-transform: uppercase; text-align: center; pointer-events: none;">Click to Chat on WhatsApp</a>
     </div>
     <style>
         @keyframes spin {
